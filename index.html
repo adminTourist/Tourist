@@ -102,11 +102,11 @@
             <div class="container py-5">
                 <div class="row justify-content-center py-5">
                     <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
-                        <h1 class="display-3 text-white mb-3 animated slideInDown">Tận hưởng kì nghĩ cùng chúng tôi</h1>
+                        <h1 class="display-3 text-white mb-3 animated slideInDown">Tận hưởng kì nghỉ cùng chúng tôi</h1>
                         <p class="fs-4 text-white mb-4 animated slideInDown">Với giá siêu hấp dẫn từ trước đến nay !</p>
                         <div class="position-relative w-75 mx-auto animated slideInDown">
-                            <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Eg: Thailand">
-                            <button type="button" class="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2" style="margin-top: 7px;">Search</button>
+                            <input id="searchInput" class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Từ Khóa: Xem giá Tour">
+                            <a id="searchLink" class="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2" style="margin-top: 7px;" href="#" onclick="this.href = 'package.html?search=' + encodeURIComponent(document.getElementById('searchInput').value)">Search</a>
                         </div>
                     </div>
                 </div>
@@ -129,7 +129,7 @@
                     <h6 class="section-title bg-white text-start text-primary pe-3">Về chúng tôi</h6>
                     <h1 class="mb-4">Kính chào quý khách tới <span class="text-primary">Tourist</span></h1>
                     <p class="mb-4">Để có được thành công, uy tín và chỗ đứng trên thị trường như hiện nay là nhờ sự cố gắng không ngừng nghỉ của toàn thể CBNV Trung Tâm, chúng tôi đã đồng sức đồng lòng để xây dựng các sản phẩm tour du lịch phù hợp với khách hàng, thiết lập mối quan hệ chặt chẽ với các nhà cung cấp như khách sạn, vé máy bay, … để mang đến cho quý khách những dịch vụ tốt nhất với giá rẻ nhất.</p>
-                    <p class="mb-4">Bạn đang trong guồng quay của công việc, cuộc sống, không có nhiều thời gian chăm sóc cho gia đình, bạn muốn bù đăp cho những người thân yêu bằng 1 kỳ nghỉ ngắn, một buổi đi chơi xa, đừng ngần ngại, hãy gọi cho chúng tôi. </p>
+                    <p class="mb-4">Bạn đang trong cuồng quay của công việc, cuộc sống, không có nhiều thời gian chăm sóc cho gia đình, bạn muốn bù đắp cho những người thân yêu bằng 1 kỳ nghỉ ngắn, một buổi đi chơi xa, đừng ngần ngại, hãy gọi cho chúng tôi. </p>
                     <div class="row gy-2 gx-4 mb-4">
                         <div class="col-sm-6">
                             <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Chuyển bay hạng thương gia</p>
@@ -223,21 +223,21 @@
                             <a class="position-relative d-block overflow-hidden" href="">
                                 <img class="img-fluid" src="img/destination-1.png" alt="">
                                 <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">Giảm 30%</div>
-                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Đà lạt</div>
+                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">ĐÀ LẠT</div>
                             </a>
                         </div>
                         <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
                             <a class="position-relative d-block overflow-hidden" href="">
                                 <img class="img-fluid" src="img/destination-2.png" alt="">
                                 <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">Giảm 25%</div>
-                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Phú Quốc</div>
+                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">PHÚ QUỐC</div>
                             </a>
                         </div>
                         <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
                             <a class="position-relative d-block overflow-hidden" href="">
                                 <img class="img-fluid" src="img/destination-3.png" alt="">
                                 <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">Giảm 35%</div>
-                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Cần thơ</div>
+                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">CẦN THƠ</div>
                             </a>
                         </div>
                     </div>
@@ -246,7 +246,7 @@
                     <a class="position-relative d-block h-100 overflow-hidden" href="">
                         <img class="img-fluid position-absolute w-100 h-100" src="img/destination-4.png" alt="" style="object-fit: cover;">
                         <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">Giảm 20%</div>
-                        <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Nha trang</div>
+                        <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">NHA TRANG</div>
                     </a>
                 </div>
             </div>
@@ -269,7 +269,7 @@
                             <img class="img-fluid" src="img/package-1.jpg" alt="">
                         </div>
                         <div class="d-flex border-bottom">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Đà lạt mộng mơ - Nha trang biển xanh</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Đà lạt - Nha trang biển xanh</small>
                             <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>4 ngày-1 đêm</small>
                             <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 người</small>
                         </div>
@@ -282,7 +282,7 @@
                                 <small class="fa fa-star text-primary"></small>
                                 <small class="fa fa-star text-primary"></small>
                             </div>
-                            <p>Khởi hành từ: Đà Lạt - Phương tiện:O tô</p>
+                            <p>Khởi hành từ: Đà Lạt - Phương tiện:Ô tô</p>
                             <div class="d-flex justify-content-center mb-2">
                                 <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Đọc ngay</a>
                                 <a href="booking.html" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book ngay</a>
@@ -297,7 +297,7 @@
                         </div>
                         <div class="d-flex border-bottom">
                             <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Hà Nội - Cần Thơ - Thiền Viện Phương Nam</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>7 ngày</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>7 ngày -1 đêm</small>
                             <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>15 người</small>
                         </div>
                         <div class="text-center p-4">
@@ -309,7 +309,7 @@
                                 <small class="fa fa-star text-primary"></small>
                                 <small class="fa fa-star text-primary"></small>
                             </div>
-                            <p>Khởi hành từ: Cần thơ - Phương tiện: Máy bay-O tô</p>
+                            <p>Khởi hành từ: Cần thơ - Phương tiện: Máy bay-Ô tô</p>
                             <div class="d-flex justify-content-center mb-2">
                                 <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Đọc ngay</a>
                                 <a href="booking.html" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book ngay</a>
@@ -336,7 +336,7 @@
                                 <small class="fa fa-star text-primary"></small>
                                 <small class="fa fa-star text-primary"></small>
                             </div>
-                            <p>Khởi hành từ: Yên Tử - Phương tiện: Máy bay - Tàu Lửa - O tô</p>
+                            <p>Khởi hành từ: Yên Tử - Phương tiện: Máy bay - Tàu Lửa - Ô tô</p>
                             <div class="d-flex justify-content-center mb-2">
                                 <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
                                 <a href="booking.html" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
@@ -387,7 +387,7 @@
                                 <div class="col-md-6">
                                     <div class="form-floating">
                                         <select class="form-select bg-transparent" id="select1">
-                                            <option value="1">Đà lạt mộng mơ - Nha trang biển xanh</option>
+                                            <option value="1">Đà lạt - Nha trang biển xanh</option>
                                             <option value="2">Hà Nội - Cần Thơ - Thiền Viện Phương Nam</option>
                                             <option value="3">Hà Nội - Lào Cai - Sapa - Yên Tử - Hạ Long</option>
                                         </select>
@@ -475,12 +475,12 @@
                             <img class="img-fluid" src="img/team-1.jpg" alt="">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square mx-1" href="https://www.facebook.com/profile.php?id=100028455493923&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
                         </div>
                         <div class="text-center p-4">
-                            <h5 class="mb-0">Hoàng Thái</h5>
+                            <h5 class="mb-0">Trần Hoàng Thái</h5>
                             <small>Hướng dẫn viên</small>
                         </div>
                     </div>
@@ -491,7 +491,7 @@
                             <img class="img-fluid" src="img/team-2.jpg" alt="">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square mx-1" href="https://www.facebook.com/profile.php?id=100072322849564&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
                         </div>
@@ -507,7 +507,7 @@
                             <img class="img-fluid" src="img/team-3.jpg" alt="">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square mx-1" href="https://www.facebook.com/profile.php?id=100013796511909&mibextid=qi2Omg&rdid=t68RsTwFbqkNBuox"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
                         </div>
@@ -523,12 +523,12 @@
                             <img class="img-fluid" src="img/team-4.jpg" alt="">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square mx-1" href="https://www.facebook.com/profile.php?id=100070253271704&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
                         </div>
                         <div class="text-center p-4">
-                            <h5 class="mb-0">Hồng Phút</h5>
+                            <h5 class="mb-0">Nguyễn Thị Hồng Phút</h5>
                             <small>Hướng dẫn viên</small>
                         </div>
                     </div>
@@ -536,10 +536,10 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-2.jpg" alt="">
+                            <img class="img-fluid" src="img/team-5.jpg" alt="">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square mx-1" href="https://www.facebook.com/profile.php?id=100020104785352&mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
                         </div>
